@@ -1,0 +1,42 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ukuran halaman penuh & background video */
+body, html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+/* Video latar belakang */
+#bgVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1; /* agar tetap di belakang elemen lain */
+}
+
+/* Container untuk gambar yang memantul */
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+
+/* Gambar memantul */
+#movingImage {
+  position: absolute;
+  width: 20vw;          /* Responsif berdasarkan lebar layar */
+  max-width: 200px;     /* Batas maksimum agar tidak terlalu besar */
+  height: auto;
+  transition: transform 0.1s;
+}
