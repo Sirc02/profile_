@@ -40,3 +40,20 @@ body, html {
   height: auto;
   transition: transform 0.1s;
 }
+
+/* ✅ Tambahan: Responsif untuk layar kecil (HP) */
+@media (max-width: 768px) {
+  #movingImage {
+    width: 35vw;        /* Gambar jadi sedikit lebih besar di HP */
+    max-width: 120px;
+  }
+
+  #bgVideo {
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  body {
+    font-size: 14px;
+  }
+}
